@@ -60,19 +60,20 @@ const showMenu = ref(false)
               class="flex flex-col items-start justify-end w-full pt-4 md:items-center md:w-1/3 md:flex-row md:py-0"
             >
               <a
-                class="w-full px-6 py-2 mr-0 text-gray-700 cursor-pointer dark:text-gray-300 md:px-3 md:mr-2 lg:mr-3 md:w-auto"
-                <GoogleChromeIcon
-                  class="w-5 h-5 mr-1"
-                />
                 href="https://web.mozui.cn"
                 target="_blank"
                 title="站点资源导航"
-              >导航</a>
+                  class="w-full px-6 py-2 mr-0 text-gray-700 cursor-pointer dark:text-gray-300 md:px-3 md:mr-2 lg:mr-3 md:w-auto"
+              >
+                <GoogleChromeIcon
+                  class="w-5 h-5 mr-1"
+                />
+                导航</a>
               <a
                 href="https://blog.mozui.cn"
                 target="_blank"
                 title="开发者博客"
-                 class="w-full px-6 py-2 mr-0 text-gray-700 cursor-pointer dark:text-gray-300 md:px-3 md:mr-2 lg:mr-3 md:w-auto"
+                  class="w-full px-6 py-2 mr-0 text-gray-700 cursor-pointer dark:text-gray-300 md:px-3 md:mr-2 lg:mr-3 md:w-auto"
               >
                 <FacebookIcon
                   class="w-5 h-5 mr-1"
@@ -82,7 +83,7 @@ const showMenu = ref(false)
                 href="https://zfile.mozui.cn:8888"
                 target="_blank"
                 title="网盘资源分享"
-                 class="w-full px-6 py-2 mr-0 text-gray-700 cursor-pointer dark:text-gray-300 md:px-3 md:mr-2 lg:mr-3 md:w-auto"
+                  class="w-full px-6 py-2 mr-0 text-gray-700 cursor-pointer dark:text-gray-300 md:px-3 md:mr-2 lg:mr-3 md:w-auto"
               >
                 <MacOsIcon
                   class="w-5 h-5 mr-1"
