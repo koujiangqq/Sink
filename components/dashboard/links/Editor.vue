@@ -43,8 +43,8 @@ const fieldConfig = {
   slug: {
     disabled: isEdit,
   },
-  optional: {
-    comment: {
+  参数: {
+    说明: {
       component: 'textarea',
     },
   },
@@ -107,7 +107,7 @@ async function onSubmit(formData) {
     url: formData.url,
     slug: formData.slug,
     ...(formData.optional || []),
-    expiration: formData.optional?.expiration ? date2unix(formData.optional?.expiration, 'end') : undefined,
+    期限: formData.optional?.expiration ? date2unix(formData.optional?.expiration, 'end') : undefined,
   }
   const { link: newLink } = await useAPI(isEdit ? '/api/link/edit' : '/api/link/create', {
     method: isEdit ? 'PUT' : 'POST',
