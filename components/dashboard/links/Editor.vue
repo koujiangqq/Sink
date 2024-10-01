@@ -62,9 +62,9 @@ const dependencies = [
 const form = useForm({
   validationSchema: toTypedSchema(EditLinkSchema),
   initialValues: {
-    slug: link.value.slug,
-    url: link.value.url,
-    optional: {
+    标识: link.value.slug,
+    链接: link.value.url,
+    设置: {
       comment: link.value.comment,
     },
   },
