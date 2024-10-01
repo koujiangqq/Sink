@@ -36,7 +36,7 @@ async function onSubmit(form) {
   <Card class="w-full max-w-sm">
     <CardHeader>
       <CardTitle class="text-2xl">
-        Login
+        登录
       </CardTitle>
       <CardDescription>
         请输入您站点的密码
