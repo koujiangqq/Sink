@@ -23,20 +23,20 @@ const { title, description } = useAppConfig()
         <HomeLink
           href="/dashboard"
           target="_blank"
-          title="Dashboard"
+          title="仪表板"
           class="flex items-center justify-center gap-1"
           rel="noopener"
         >
           <AreaChart
             class="w-5 h-5"
           />
-          Dashboard
+          仪表板
         </HomeLink>
         <HomeLink
           size="lg"
           type="outline"
           rel="noopener"
-          href="https://github.com/ccbikai/sink"
+          href="https://github.com/koujiangqq/sink"
           title="Github"
           class="flex items-center justify-center gap-1"
           target="_blank"
