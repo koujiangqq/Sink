@@ -14,7 +14,7 @@ defineProps({
     <BreadcrumbList>
       <BreadcrumbItem>
         <BreadcrumbLink href="/">
-          Sink
+          短短好用
         </BreadcrumbLink>
       </BreadcrumbItem>
       <BreadcrumbSeparator />
@@ -23,7 +23,7 @@ defineProps({
           :as="NuxtLink"
           to="/dashboard"
         >
-          Dashboard
+          仪表板
         </BreadcrumbLink>
       </BreadcrumbItem>
       <BreadcrumbSeparator />
