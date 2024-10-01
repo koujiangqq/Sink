@@ -64,6 +64,16 @@ const showMenu = ref(false)
                 href="https://www.mozui.cn"
                 title="个人主页"
               >个人主页</a>
+              <a
+                class="w-full px-6 py-2 mr-0 text-gray-700 cursor-pointer dark:text-gray-300 md:px-3 md:mr-2 lg:mr-3 md:w-auto"
+                href="https://web.mozui.cn"
+                title="网址导航"
+              >网址导航</a>
+              <a
+                class="w-full px-6 py-2 mr-0 text-gray-700 cursor-pointer dark:text-gray-300 md:px-3 md:mr-2 lg:mr-3 md:w-auto"
+                href="https://blog.mozui.cn"
+                title="个人博客"
+              >个人博客</a>
               <span class="ml-1">
                 <SwitchTheme />
               </span>
