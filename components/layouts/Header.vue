@@ -61,33 +61,27 @@ const showMenu = ref(false)
             >
               <a
                 class="w-full px-6 py-2 mr-0 text-gray-700 cursor-pointer dark:text-gray-300 md:px-3 md:mr-2 lg:mr-3 md:w-auto"
-                href="https://blog.mozui.cn"
-                title="博客"
-              >博客</a>
-              <span class="ml-1">
-                <SwitchTheme />
-              </span>
-            </div>
-           <div
-              class="flex flex-col items-start justify-end w-full pt-4 md:items-center md:w-1/3 md:flex-row md:py-0"
-            >
-              <a
-                class="w-full px-6 py-2 mr-0 text-gray-700 cursor-pointer dark:text-gray-300 md:px-3 md:mr-2 lg:mr-3 md:w-auto"
-                href="https://www.mozui.cn"
-                title="导航"
-              >导航</a>
-              <span class="ml-1">
-                <SwitchTheme />
-              </span>
-            </div>
-           <div
-              class="flex flex-col items-start justify-end w-full pt-4 md:items-center md:w-1/3 md:flex-row md:py-0"
-            >
-              <a
-                class="w-full px-6 py-2 mr-0 text-gray-700 cursor-pointer dark:text-gray-300 md:px-3 md:mr-2 lg:mr-3 md:w-auto"
                 href="https://www.mozui.cn"
                 title="主页"
               >主页</a>
+            </div>
+           <div
+              class="flex flex-col items-start justify-end w-full pt-4 md:items-center md:w-1/3 md:flex-row md:py-0"
+            >
+              <a
+                class="w-full px-6 py-2 mr-0 text-gray-700 cursor-pointer dark:text-gray-300 md:px-3 md:mr-2 lg:mr-3 md:w-auto"
+                href="https://web.mozui.cn"
+                title="导航"
+              >导航</a>
+            </div>
+           <div
+              class="flex flex-col items-start justify-end w-full pt-4 md:items-center md:w-1/3 md:flex-row md:py-0"
+            >
+              <a
+                class="w-full px-6 py-2 mr-0 text-gray-700 cursor-pointer dark:text-gray-300 md:px-3 md:mr-2 lg:mr-3 md:w-auto"
+                href="https://blog.mozui.cn"
+                title="博客"
+              >博客</a>
               <span class="ml-1">
                 <SwitchTheme />
               </span>
