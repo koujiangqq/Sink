@@ -35,16 +35,16 @@ const EditLinkSchema = LinkSchema.pick({
     description: true,
     image: true,
   }).extend({
-    到期日: z.coerce.date().optional(),
+    到期时间: z.coerce.date().optional(),
   }).optional(),
 })
 
 const fieldConfig = {
-  识别码: {
+  slug: {
     disabled: isEdit,
   },
-  设置: {
-    说明: {
+  optional: {
+    comment: {
       component: 'textarea',
     },
   },
@@ -62,10 +62,10 @@ const dependencies = [
 const form = useForm({
   validationSchema: toTypedSchema(EditLinkSchema),
   initialValues: {
-    识别码: link.value.slug,
-    链接: link.value.url,
-    设置: {
-      说明: link.value.comment,
+    slug: link.value.slug,
+    url: link.value.url,
+    optional: {
+      comment: link.value.comment,
     },
   },
   validateOnMount: isEdit,
@@ -85,7 +85,7 @@ async function aiSlug() {
   try {
     const { slug } = await useAPI('/api/link/ai', {
       query: {
-        链接: form.values.url,
+        url: form.values.url,
       },
     })
     form.setFieldValue('slug', slug)
@@ -104,7 +104,7 @@ onMounted(() => {
 
 async function onSubmit(formData) {
   const link = {
-    链接: formData.url,
+    url: formData.url,
     slug: formData.slug,
     ...(formData.optional || []),
     expiration: formData.optional?.expiration ? date2unix(formData.optional?.expiration, 'end') : undefined,
@@ -116,10 +116,10 @@ async function onSubmit(formData) {
   dialogOpen.value = false
   emit('update:link', newLink)
   if (isEdit) {
-    toast('Link updated successfully')
+    toast('链接修改成功！')
   }
   else {
-    toast('Link created successfully')
+    toast('链接创建成功！')
   }
 }
 
@@ -135,7 +135,7 @@ const { previewMode } = useRuntimeConfig().public
           variant="outline"
           @click="randomSlug"
         >
-          Create Link
+          创建链接
         </Button>
       </slot>
     </DialogTrigger>
@@ -147,7 +147,7 @@ const { previewMode } = useRuntimeConfig().public
         v-if="previewMode"
         class="text-sm text-muted-foreground"
       >
-        访客模式链接有效期24小时。
+        访客模式url有效期24小时。
       </p>
       <AutoForm
         class="px-2 space-y-2 overflow-y-auto"
