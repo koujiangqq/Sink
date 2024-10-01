@@ -22,10 +22,10 @@ const dialogOpen = ref(false)
 const isEdit = !!props.link.id
 
 const EditLinkSchema = LinkSchema.pick({
-  链接: true,
-  标识: true,
+  url: true,
+  slug: true,
 }).extend({
-  设置: LinkSchema.omit({
+  optional: LinkSchema.omit({
     id: true,
     url: true,
     slug: true,
