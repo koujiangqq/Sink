@@ -25,7 +25,7 @@ const EditLinkSchema = LinkSchema.pick({
   url: true,
   slug: true,
 }).extend({
-  optional: LinkSchema.omit({
+  设置: LinkSchema.omit({
     id: true,
     url: true,
     slug: true,
@@ -35,7 +35,7 @@ const EditLinkSchema = LinkSchema.pick({
     description: true,
     image: true,
   }).extend({
-    expiration: z.coerce.date().optional(),
+    期限: z.coerce.date().optional(),
   }).optional(),
 })
 
@@ -43,8 +43,8 @@ const fieldConfig = {
   slug: {
     disabled: isEdit,
   },
-  参数: {
-    说明: {
+  optional: {
+    comment: {
       component: 'textarea',
     },
   },
@@ -107,7 +107,7 @@ async function onSubmit(formData) {
     url: formData.url,
     slug: formData.slug,
     ...(formData.optional || []),
-    期限: formData.optional?.expiration ? date2unix(formData.optional?.expiration, 'end') : undefined,
+    expiration: formData.optional?.expiration ? date2unix(formData.optional?.expiration, 'end') : undefined,
   }
   const { link: newLink } = await useAPI(isEdit ? '/api/link/edit' : '/api/link/create', {
     method: isEdit ? 'PUT' : 'POST',
