@@ -1,7 +1,3 @@
-[[analytics_engine_datasets]]
-binding = "ANALYTICS"
-dataset = "sink"
-
 upload_source_maps = true
 
 [dev]
