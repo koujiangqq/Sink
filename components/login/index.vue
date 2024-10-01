@@ -4,7 +4,7 @@ import { z } from 'zod'
 import { toast } from 'vue-sonner'
 
 const LoginSchema = z.object({
-  token: z.string().describe('密码'),
+  token: z.string().describe('SiteToken'),
 })
 const loginFieldConfig = {
   token: {
@@ -25,7 +25,7 @@ async function onSubmit(form) {
   }
   catch (e) {
     console.error(e)
-    toast.error('登录失败，请重试', {
+    toast.error('Login failed, please try again.', {
       description: e.message,
     })
   }
@@ -36,10 +36,10 @@ async function onSubmit(form) {
   <Card class="w-full max-w-sm">
     <CardHeader>
       <CardTitle class="text-2xl">
-        登录
+        Login
       </CardTitle>
       <CardDescription>
-        请输入访问密码进行登录
+        Enter your site token to login.
       </CardDescription>
     </CardHeader>
     <CardContent class="grid gap-4">
@@ -51,13 +51,13 @@ async function onSubmit(form) {
       >
         <Alert v-if="previewMode">
           <AlertCircle class="w-4 h-4" />
-          <AlertTitle>提示</AlertTitle>
+          <AlertTitle>Tips</AlertTitle>
           <AlertDescription>
-            访客模式的密码是： <code class="font-mono text-green-500">duanduan</code> .
+            The site token for preview mode is <code class="font-mono text-green-500">SinkCool</code> .
           </AlertDescription>
         </Alert>
         <Button class="w-full">
-          登录
+          Login
         </Button>
       </AutoForm>
     </CardContent>
