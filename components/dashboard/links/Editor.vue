@@ -22,8 +22,8 @@ const dialogOpen = ref(false)
 const isEdit = !!props.link.id
 
 const EditLinkSchema = LinkSchema.pick({
-  url: true,
-  slug: true,
+  链接: true,
+  标识: true,
 }).extend({
   设置: LinkSchema.omit({
     id: true,
@@ -35,7 +35,7 @@ const EditLinkSchema = LinkSchema.pick({
     description: true,
     image: true,
   }).extend({
-    期限: z.coerce.date().optional(),
+    expiration: z.coerce.date().optional(),
   }).optional(),
 })
 
