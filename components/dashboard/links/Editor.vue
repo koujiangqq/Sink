@@ -25,7 +25,7 @@ const EditLinkSchema = LinkSchema.pick({
   url: true,
   slug: true,
 }).extend({
-  设置: LinkSchema.omit({
+  optional: LinkSchema.omit({
     id: true,
     url: true,
     slug: true,
@@ -35,7 +35,7 @@ const EditLinkSchema = LinkSchema.pick({
     description: true,
     image: true,
   }).extend({
-    到期时间: z.coerce.date().optional(),
+    expiration: z.coerce.date().optional(),
   }).optional(),
 })
 
@@ -116,10 +116,10 @@ async function onSubmit(formData) {
   dialogOpen.value = false
   emit('update:link', newLink)
   if (isEdit) {
-    toast('链接修改成功！')
+    toast('链接修改成功')
   }
   else {
-    toast('链接创建成功！')
+    toast('链接创建成功')
   }
 }
 
@@ -147,7 +147,7 @@ const { previewMode } = useRuntimeConfig().public
         v-if="previewMode"
         class="text-sm text-muted-foreground"
       >
-        访客模式url有效期24小时。
+        访客模式链接有效为24小时
       </p>
       <AutoForm
         class="px-2 space-y-2 overflow-y-auto"
