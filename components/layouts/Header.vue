@@ -61,11 +61,6 @@ const showMenu = ref(false)
             >
               <a
                 class="w-full px-6 py-2 mr-0 text-gray-700 cursor-pointer dark:text-gray-300 md:px-3 md:mr-2 lg:mr-3 md:w-auto"
-                href="https://zfile.mozui.cn:8888"
-                title="分享一些实用的站点资源"
-              >资源</a>
-              <a
-                class="w-full px-6 py-2 mr-0 text-gray-700 cursor-pointer dark:text-gray-300 md:px-3 md:mr-2 lg:mr-3 md:w-auto"
                 href="https://web.mozui.cn"
                 title="分享一些实用的站点资源"
               >导航</a>
