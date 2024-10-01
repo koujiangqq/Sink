@@ -4,7 +4,7 @@ import { z } from 'zod'
 import { toast } from 'vue-sonner'
 
 const LoginSchema = z.object({
-  token: z.string().describe('SiteToken'),
+  token: z.string().describe('密码'),
 })
 const loginFieldConfig = {
   token: {
