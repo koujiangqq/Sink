@@ -13,8 +13,8 @@ defineProps({
   <Breadcrumb class="flex justify-between">
     <BreadcrumbList>
       <BreadcrumbItem>
-        <BreadcrumbLink href="/">
-          个人主页
+        <BreadcrumbLink href="https://www.mozui.cn">
+          首页
         </BreadcrumbLink>
       </BreadcrumbItem>
       <BreadcrumbSeparator />
