@@ -1,6 +1,6 @@
 <template>
   <main class="space-y-6">
-    <DashboardBreadcrumb title="Links" />
+    <DashboardBreadcrumb title="链接" />
     <DashboardLinks />
   </main>
 </template>
