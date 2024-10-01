@@ -60,35 +60,25 @@ const showMenu = ref(false)
               class="flex flex-col items-start justify-end w-full pt-4 md:items-center md:w-1/3 md:flex-row md:py-0"
             >
               <a
+                class="w-full px-6 py-2 mr-0 text-gray-700 cursor-pointer dark:text-gray-300 md:px-3 md:mr-2 lg:mr-3 md:w-auto"
+                href="https://zfile.mozui.cn:8888"
+                title="分享一些实用的站点资源"
+              >资源</a>
+              <a
+                class="w-full px-6 py-2 mr-0 text-gray-700 cursor-pointer dark:text-gray-300 md:px-3 md:mr-2 lg:mr-3 md:w-auto"
                 href="https://web.mozui.cn"
-                target="_blank"
-                title="站点资源导航"
-                  class="w-full px-6 py-2 mr-0 text-gray-700 cursor-pointer dark:text-gray-300 md:px-3 md:mr-2 lg:mr-3 md:w-auto"
-              >
-                <GoogleChromeIcon
-                  class="w-5 h-5 mr-1"
-                />
-                导航</a>
+                title="分享一些实用的站点资源"
+              >导航</a>
               <a
                 href="https://blog.mozui.cn"
                 target="_blank"
-                title="开发者博客"
-                  class="w-full px-6 py-2 mr-0 text-gray-700 cursor-pointer dark:text-gray-300 md:px-3 md:mr-2 lg:mr-3 md:w-auto"
+                title="作者博客"
+                class="inline-flex items-center w-full px-6 py-3 text-sm font-medium leading-4 text-white bg-gray-900 md:px-3 md:w-auto md:rounded-full hover:bg-gray-800 focus:outline-none md:focus:ring-2 focus:ring-0 focus:ring-offset-2 focus:ring-gray-800"
               >
-                <FacebookIcon
+                <GitHubIcon
                   class="w-5 h-5 mr-1"
                 />
                 博客</a>
-              <a
-                href="https://zfile.mozui.cn:8888"
-                target="_blank"
-                title="网盘资源分享"
-                  class="w-full px-6 py-2 mr-0 text-gray-700 cursor-pointer dark:text-gray-300 md:px-3 md:mr-2 lg:mr-3 md:w-auto"
-              >
-                <MacOsIcon
-                  class="w-5 h-5 mr-1"
-                />
-                资源</a>
               <span class="ml-1">
                 <SwitchTheme />
               </span>
