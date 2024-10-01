@@ -18,13 +18,13 @@ function logOut() {
       <AlertDialogHeader>
         <AlertDialogTitle>LogOut ?</AlertDialogTitle>
         <AlertDialogDescription>
-          Are you sure you want to log out ?
+          你确定要退出吗？
         </AlertDialogDescription>
       </AlertDialogHeader>
       <AlertDialogFooter>
         <AlertDialogCancel>Cancel</AlertDialogCancel>
         <AlertDialogAction @click="logOut">
-          LogOut
+          注销
         </AlertDialogAction>
       </AlertDialogFooter>
     </AlertDialogContent>
