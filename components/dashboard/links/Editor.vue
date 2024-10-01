@@ -25,7 +25,7 @@ const EditLinkSchema = LinkSchema.pick({
   url: true,
   slug: true,
 }).extend({
-  optional: LinkSchema.omit({
+  设置: LinkSchema.omit({
     id: true,
     url: true,
     slug: true,
@@ -43,7 +43,7 @@ const fieldConfig = {
   slug: {
     disabled: isEdit,
   },
-  optional: {
+  设置: {
     comment: {
       component: 'textarea',
     },
@@ -64,7 +64,7 @@ const form = useForm({
   initialValues: {
     slug: link.value.slug,
     url: link.value.url,
-    optional: {
+    设置: {
       comment: link.value.comment,
     },
   },
