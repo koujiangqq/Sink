@@ -13,15 +13,15 @@ onMounted(() => {
       <a
         href="/"
         class="text-xl font-black leading-none text-gray-900 select-none dark:text-gray-100 logo"
-        title="短短好用"
+        title="Sink"
       >Sink</a>
       <a
         class="mt-4 text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l sm:border-gray-200 sm:mt-0"
-        href="https://mozui.cn"
+        href="https://github.com/ccbikai/sink"
         target="_blank"
         title="WWW.MOZUI.CN"
       >
-        &copy; {{ new Date().getFullYear() }} Power by Mozui
+        &copy; {{ new Date().getFullYear() }} Mozui & Made by ccbikai
       </a>
       <span
         class="inline-flex justify-center mt-4 space-x-5 sm:ml-auto sm:mt-0 sm:justify-start"
