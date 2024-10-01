@@ -25,7 +25,7 @@ async function onSubmit(form) {
   }
   catch (e) {
     console.error(e)
-    toast.error('Login failed, please try again.', {
+    toast.error('登录失败，请重试', {
       description: e.message,
     })
   }
@@ -39,7 +39,7 @@ async function onSubmit(form) {
         Login
       </CardTitle>
       <CardDescription>
-        Enter your site token to login.
+        请输入您的站点令牌进行登录
       </CardDescription>
     </CardHeader>
     <CardContent class="grid gap-4">
@@ -51,9 +51,9 @@ async function onSubmit(form) {
       >
         <Alert v-if="previewMode">
           <AlertCircle class="w-4 h-4" />
-          <AlertTitle>Tips</AlertTitle>
+          <AlertTitle>提示</AlertTitle>
           <AlertDescription>
-            The site token for preview mode is <code class="font-mono text-green-500">SinkCool</code> .
+            访客模式的站点令牌是： <code class="font-mono text-green-500">SinkCool</code> .
           </AlertDescription>
         </Alert>
         <Button class="w-full">
