@@ -35,12 +35,12 @@ const EditLinkSchema = LinkSchema.pick({
     description: true,
     image: true,
   }).extend({
-    expiration: z.coerce.date().optional(),
+    到期日: z.coerce.date().optional(),
   }).optional(),
 })
 
 const fieldConfig = {
-  slug: {
+  识别码: {
     disabled: isEdit,
   },
   设置: {
@@ -62,8 +62,8 @@ const dependencies = [
 const form = useForm({
   validationSchema: toTypedSchema(EditLinkSchema),
   initialValues: {
-    slug: link.value.slug,
-    url: link.value.url,
+    识别码: link.value.slug,
+    链接: link.value.url,
     设置: {
       comment: link.value.comment,
     },
@@ -85,7 +85,7 @@ async function aiSlug() {
   try {
     const { slug } = await useAPI('/api/link/ai', {
       query: {
-        url: form.values.url,
+        链接: form.values.url,
       },
     })
     form.setFieldValue('slug', slug)
@@ -104,7 +104,7 @@ onMounted(() => {
 
 async function onSubmit(formData) {
   const link = {
-    url: formData.url,
+    链接: formData.url,
     slug: formData.slug,
     ...(formData.optional || []),
     expiration: formData.optional?.expiration ? date2unix(formData.optional?.expiration, 'end') : undefined,
