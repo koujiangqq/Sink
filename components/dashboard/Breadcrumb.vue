@@ -14,7 +14,7 @@ defineProps({
     <BreadcrumbList>
       <BreadcrumbItem>
         <BreadcrumbLink href="/">
-          短短好用
+          首页
         </BreadcrumbLink>
       </BreadcrumbItem>
       <BreadcrumbSeparator />
