@@ -44,7 +44,7 @@ const fieldConfig = {
     disabled: isEdit,
   },
   设置: {
-    comment: {
+    说明: {
       component: 'textarea',
     },
   },
@@ -65,7 +65,7 @@ const form = useForm({
     识别码: link.value.slug,
     链接: link.value.url,
     设置: {
-      comment: link.value.comment,
+      说明: link.value.comment,
     },
   },
   validateOnMount: isEdit,
