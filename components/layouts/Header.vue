@@ -61,6 +61,9 @@ const showMenu = ref(false)
             >
               <a
                 class="w-full px-6 py-2 mr-0 text-gray-700 cursor-pointer dark:text-gray-300 md:px-3 md:mr-2 lg:mr-3 md:w-auto"
+                <GitHubIcon
+                  class="w-5 h-5 mr-1"
+                />
                 href="https://web.mozui.cn"
                 target="_blank"
                 title="站点资源导航"
@@ -68,13 +71,23 @@ const showMenu = ref(false)
               <a
                 href="https://blog.mozui.cn"
                 target="_blank"
-                title="博客"
-                class="inline-flex items-center w-full px-6 py-3 text-sm font-medium leading-4 text-white bg-gray-900 md:px-3 md:w-auto md:rounded-full hover:bg-gray-800 focus:outline-none md:focus:ring-2 focus:ring-0 focus:ring-offset-2 focus:ring-gray-800"
+                title="开发者博客"
+                 class="w-full px-6 py-2 mr-0 text-gray-700 cursor-pointer dark:text-gray-300 md:px-3 md:mr-2 lg:mr-3 md:w-auto"
               >
                 <GitHubIcon
                   class="w-5 h-5 mr-1"
                 />
                 博客</a>
+              <a
+                href="https://zfile.mozui.cn:8888"
+                target="_blank"
+                title="网盘资源分享"
+                 class="w-full px-6 py-2 mr-0 text-gray-700 cursor-pointer dark:text-gray-300 md:px-3 md:mr-2 lg:mr-3 md:w-auto"
+              >
+                <GitHubIcon
+                  class="w-5 h-5 mr-1"
+                />
+                资源</a>
               <span class="ml-1">
                 <SwitchTheme />
               </span>
